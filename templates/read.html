@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="twitter:card">
+<link href="" rel="icon"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Universal Font Convertors</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/material.css">
+<script src="../static/js/material.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link type="text/css" rel="stylesheet" href="../static/css/materialize.css"  media="screen,projection"/>
+<script type="text/javascript" src="../static/js/materialize.js"></script>
+
+
+      </head>
+  <body>
+
+<style>
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color:green;
+}
+</style>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><h4><i>LANGUAGE CONVERTORS</i></h4></span>
+      <div class="mdl-layout-spacer"></div>
+       
+    </div>
+  </header>
+ 
+ <div class="mdl-layout__drawer">
+ <nav class="mdl-navigation" style=" background-color:#fff;">
+		<img class="mdl-layout-title" src="../static/image/ufc.png" width="100%">		
+		<a class="mdl-navigation__link" href="{{url_for('index')}}">Home</a>
+		<a class="mdl-navigation__link" href="https://download.cnet.com/Zawgyi-Myanmar-Fonts-Pack/3000-20418_4-76445084.html">Zawgyi</a>
+		<a class="mdl-navigation__link" href="http://unicode.org/standard/WhatIsUnicode.html">Unicode</a>
+		<a class="mdl-navigation__link" href="http://winmyanmar.tripod.com/wms.html">WinInnwa</a>
+		<a class="mdl-navigation__link" href="{{url_for('mytable')}}">About this project</a>
+	</nav>
+  </div>
+  <br>
+      <div class="row">
+    <div class="col s12 m12">
+      <div class="card blue">
+  <div class="card-action">
+   <span class="card-title"><h4 align="center">About This Project</h4></span>
+		<p align="justify">
+		This convertor provides our languages to convert how we want to know to translate this language to understand international language convertor.
+		This document targets developers implementing shaping behavior compatible with the Microsoft OpenType specification for complex scripts not supported by a dedicated shaping engine. It contains information about terminology, font features and behavior of the Universal Shaping Engine (USE). While it does not contain instructions for creating fonts, it will help font developers understand how the Universal shaping engine processes complex script text.
+		The run of text that the shaping engine receives for the purpose of shaping is a sequence of Unicode characters. Itemization preprocessing ensures that the runs of text being shaped contain characters belonging to a single script but may include SCRIPT_COMMON characters. The shaping engine divides the text into syllable clusters and identifies character properties. Character properties are used in parsing syllables and identifying their parts as well as determining whether any special behavior or contextual reordering is required. The Universal Shaping Engine (USE) generates character properties from Unicode data. There is a mapping between Unicode’s categories and the classes used internally by USE. This section defines how USE’s classes and subclasses are derived from Unicode data.
+		</p>
+		 </div>
+  </div></div></div>
+      <footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer__middle-section">
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Features</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('about')}}">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Updates</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Details</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Specs</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Technology</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Patterns</a></li>
+        <li><a href="#">Usage</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contracts</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('Question')}}">Questions</a></li>
+	<li><a href="{{url_for('Answer')}}">Answers</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="mdl-mega-footer__bottom-section">
+    <div class="mdl-logo">Title</div>
+    <ul class="mdl-mega-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+
+</footer>
+</body>
+</html>
+

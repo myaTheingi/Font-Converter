@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="twitter:card">
+<link href="" rel="icon"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Universal Font Convertors</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/material.css">
+<script src="../static/js/material.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link type="text/css" rel="stylesheet" href="../static/css/materialize.css"  media="screen,projection"/>
+<script type="text/javascript" src="../static/js/materialize.js"></script>
+
+
+      </head>
+  <body>
+
+<style>
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is green. */
+  color: red;
+}
+</style>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><h4><i>LANGUAGE CONVERTORS</i></h4></span>
+      <div class="mdl-layout-spacer"></div>
+       
+    </div>
+  </header>
+ 
+ <div class="mdl-layout__drawer">
+<nav class="mdl-navigation" style=" background-color:#fff;">
+   <img class="mdl-layout-title" src="../static/image/ufc.png" width="100%">
+   <a class="mdl-navigation__link" href="{{url_for('index')}}">Home</a>
+      <a class="mdl-navigation__link" href="https://download.cnet.com/Zawgyi-Myanmar-Fonts-Pack/3000-20418_4-76445084.html">Zawgyi</a>
+      <a class="mdl-navigation__link" href="http://unicode.org/standard/WhatIsUnicode.html">Unicode</a>
+	<a class="mdl-navigation__link" href="http://winmyanmar.tripod.com/wms.html">WinInnwa</a>
+		<a class="mdl-navigation__link" href={{url_for('mytable')}}"">About this project</a>
+	</nav>
+  </div>
+</div>
+<main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here -->
+      <br><br><br>
+      <h3>FAQ</h3>
+      
+      <h5>Contents</h5>
+
+      <p><a href="{{url_for('Answer')}}">Some characters do not appear using Word?<br></a></p>
+      <p><a href="{{url_for('Answer')}}"> Where else can I ftp WinInnwa Font?</a></p>
+      <p><a href="{{url_for('Answer')}}"> What are Hardware requirements?</a></p>
+      <p><a href="{{url_for('Answer')}}"> What are Software requirements?</a></p>
+       <p><a href="{{url_for('Answer')}}">What is the Unicode character set?</a></p>
+      <p><a href="{{url_for('Answer')}}"> How do you type a Unicode character?</a></p>
+      <p><a href="{{url_for('Answer')}}"> What is Unicode text message?</a></p>
+	  <p><a href="{{url_for('Answer')}}">What are some of the visible differences between Unicode and the ad hoc encodings such as Zawgyi?</a></p>
+	  <p><a href="{{url_for('Answer')}}"> My site has content entered by users in both Zawgyi and Unicode text. How can my users read both?</a></p>
+	  <p><a href="{{url_for('Answer')}}">Isn't there a universal font that will display Unicode and Zawgyi text together?</a></p>
+      </div>
+    </main>
+
+    <footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer__middle-section">
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Features</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Updates</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Details</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Specs</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Technology</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Patterns</a></li>
+        <li><a href="#">Usage</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contracts</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('Question')}}">Questions</a></li>
+        <li><a href="{{url_for('Answer')}}">Answers</a></li>
+		<li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="mdl-mega-footer__bottom-section">
+    <div class="mdl-logo">Title</div>
+    <ul class="mdl-mega-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+
+</footer>
+  </body>
+  </html>
+  

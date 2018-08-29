@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="twitter:card">
+<link href="" rel="icon"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Universal Font Convertors</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/material.css">
+<script src="../static/js/material.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link type="text/css" rel="stylesheet" href="../static/css/materialize.css"  media="screen,projection"/>
+<script type="text/javascript" src="../static/js/materialize.js"></script>
+
+
+      </head>
+  <body>
+
+<style>
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is green. */
+  color: red;
+}
+</style>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><h5><i>LANGUAGE CONVERTORS</i></h5></span>
+      <div class="mdl-layout-spacer"></div>
+       
+    </div>
+  </header>
+ 
+ <div class="mdl-layout__drawer">
+ <nav class="mdl-navigation" style=" background-color:#fff;">
+ <img class="mdl-layout-title" src="../static/image/ufc.png" width="100%">
+ <a class="mdl-navigation__link" href="{{url_for('index')}}">Home</a>
+      <a class="mdl-navigation__link" href="https://download.cnet.com/Zawgyi-Myanmar-Fonts-Pack/3000-20418_4-76445084.html">Zawgyi</a>
+      <a class="mdl-navigation__link" href="http://unicode.org/standard/WhatIsUnicode.html">Unicode</a>
+	<a class="mdl-navigation__link" href="http://winmyanmar.tripod.com/wms.html">WinInnwa</a>
+	<a class="mdl-navigation__link" href="{{url_for('mytable')}}">About this project</a>
+	</nav>
+  </div>
+</div>
+<main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here -->
+      <br><br><br>
+      <h3>FAQ</h3>
+      
+      <h5>Contents</h5>
+
+      <p><a href="{{url_for('Answer')}}">Some characters do not appear using Word?<br></a><br>Sometimes, you'll have a few problems, using MS-Word, such as typing DaDwe and DaOutChike, red and green underlines, etc. If so, here is the solution.
+Download normal.dot from here..
+If you are using Word with MS-Office97, click!
+If you are using Word with MS-Office95, click!
+Find a file, named "normal.dot", which is usually in c:\Program Files\Microsoft Office\Templates, in your computer
+Then replace it. Done!</p>
+      <p><a href="{{url_for('Answer')}}"> Where else can I ftp WinInnwa Font?</a><br>For Windows (truetype font):
+winnwa.ttf<br>
+winnwa.ttf<br>
+winnwa.ttf<br>
+winnwa.ttf<br>
+winnwa.zip<br>
+winnwa.zip<br>
+winnwa.zip<br>
+For Macintosh (font suitcase):<br>
+winnwa.mac (We need feedback, please.)<br>
+Both for Windows and Macintosh:<br>
+ftp://ftp.simtel.net/pub/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.tas.gov.au/.2/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.cdrom.com/.27/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.bitcon.no/.4/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.is.co.za/.4/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.ruhr-uni-bochum.de/.subdisc2/mirrors/ftp.cdrom.com/pub/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.doc.ic.ac.uk/Mirrors/ftp.cdrom.com/pub/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.ua.pt/disk4/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.darenet.dk/mirror/ftp.simtel.net/pub/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.sektornet.dk/mirror/ftp.simtel.net/pub/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.flashnet.it/mirror/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.iol.ie/mirrors/Simtel.Net/win95/font/winnwa.zip<br>
+ftp://ftp.iis.com.br/pub/.1/simtel/win95/font/winnwa.zip<br>
+ftp://ftp.orst.edu/pub/mirrors/ftp.cdrom.com/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.barc.org/pub/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.lanet.lv/pub/simtelnet/win95/font/winnwa.zip<br>
+ftp://ftp.cso.uiuc.edu/pub/systems/pc/simtelnet/win95/font/winnwa.zip<br></p>
+      <p><a href="{{url_for('Answer')}}"> What are Hardware requirements?</a><br>* 286 or better PC<br> 
+  * hard disk<br></p>
+      <p><a href="{{url_for('Answer')}}"> What are Software requirements?</a><br>* Microsoft Windows 3.0 or better for PCs<br>
+  * System 6 or better for Macs<br></p>
+      <p><a href="{{url_for('Answer')}}">What is the Unicode character set?</a><br>"Unicode is a character encoding standard that has widespread acceptance.Microsoft software uses Unicode at its core.Whether you realize it or not,you are using Unicode already! Basically,"computers just deal with numbers.They store letters and other characters by assigning a number for each one."<br></p>
+      <p><a href="{{url_for('Answer')}}"> How do you type a Unicode character?</a><br>"First create a registry key under HKY_CUTRRENT_USER of type REG_SZ called EnableHexNumpad,set its value to 1, and reboot.Then you can enter Unicode symbols by holding down the Alt key and typing the plus sign on the numeric keypad followed by the character value.When you release the Alt key,the symbol will appear."<br></p>
+      <p><a href="{{url_for('Answer')}}">What is Unicode text message?</a><br>
+        "Typically an SMS text message contains up to 160 characters from the GSM alphabet knowns all latin characters, digits and a few special characters.Languages such as Chinese,Cyrillic,Arabic or Thai contain characters outside this alphabet and must be sent using the Unicode standard."<br></p>
+      <p><a href="{{url_for('Answer')}}">What are some of the visible differences between Unicode and the ad hoc encodings such as Zawgyi?</a><br>
+	  Wikipedia:Font shows code point differences between Unicode and Zawgyi, the most commonly used ad hoc scheme.
+
+For each combining character, the Unicode Standard defines a single code point that is rendered appropriately for the base character. For example U+103C, the ra medial surrounds an associated consonant with a line. A Unicode font generates the right shape at display time.
+
+Non-Unicode fonts define as many as 8 code points for different parts of the same ra glyph. Typing is cumbersome because the user must select the right form for each context.<br></p>
+     <p><a href="{{url_for('Answer')}}"> My site has content entered by users in both Zawgyi and Unicode text. How can my users read both?</a><br>
+	  It's great that you want your users to be able to read all messages! There are at least two ways to enable this, similar to the methods described above for websites. Each requires detecting the encoding of each message posted.
+
+The preferred method is to convert all postings to Unicode form. Set CSS to use Unicode-compatible fonts.
+
+An alternative method is to use web fonts for the site. Make sure each posting is in its own tagged block such as div. Set the CSS for each post to either a Unicode font or Zawgyi, depending on what was detected for the individual posting. Note that this will result in an inconsistent look to the text due to different font styles.
+
+You may also consider educating your users on using Unicode fonts.<br></p>
+ <p><a href="{{url_for('Answer')}}">Isn't there a universal font that will display Unicode and Zawgyi text together?</a><br>
+No. Since the code points for Zawgyi and Unicode use the same range (0x1000-0x109f), no font can automatically apply the right character shapes. A universal font is impossible.
+
+Zawgyi should be converted to Unicode before adding to a web page or other display.
+
+If absolutely necessary, HTML can explicitly specify a non-Unicode font for a tagged region if the encoding of the text is non-Unicode.<br></p>
+	</div>
+  </main>
+
+    <footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer__middle-section">
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Features</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('about')}}">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Updates</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Details</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Specs</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Technology</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Patterns</a></li>
+        <li><a href="#">Usage</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contracts</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('Question')}}">Questions</a></li>
+        <li><a href="{{url_for('Answer')}}">Answers</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="mdl-mega-footer__bottom-section">
+    <div class="mdl-logo">Title</div>
+    <ul class="mdl-mega-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+
+</footer>
+  </body>
+  </html>
+      

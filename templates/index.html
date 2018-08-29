@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="twitter:card">
+<link href="" rel="icon"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Universal Font Convertors</title>
+
+ 
+<link rel="stylesheet" href="../static/css/material.css">
+<script src="../static/js/material.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link type="text/css" rel="stylesheet" href="../static/css/materialize.css"  media="screen,projection"/>
+<script type="text/javascript" src="../static/js/materialize.js"></script>
+
+
+      </head>
+  <body>
+
+<style>
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color: blue;
+}
+</style>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title"><h4><i>LANGUAGE CONVERTORS</i></h4></span>
+    </div>
+  </header>
+ 
+ <div class="mdl-layout__drawer">
+	<nav class="mdl-navigation" style="background-color: #fff;">
+		<img class="mdl-layout-title" src="../static/image/ufc.png" width="100%">
+		<a class="mdl-navigation__link" href="{{url_for('index')}}">Home</a>
+		<a class="mdl-navigation__link" href="https://download.cnet.com/Zawgyi-Myanmar-Fonts-Pack/3000-20418_4-76445084.html">Zawgyi</a>
+		<a class="mdl-navigation__link" href="http://unicode.org/standard/WhatIsUnicode.html">Unicode</a>
+		<a class="mdl-navigation__link" href="http://winmyanmar.tripod.com/wms.html">WinInnwa</a>
+		<a class="mdl-navigation__link" href="{{url_for('mytable')}}">About this project</a>
+	</nav>
+ </div>
+ <div class="row">
+    <div class="col s12 m12">
+		<div class="card ">
+			<div class="category-list-wrapper home-section section-ivory">
+				<div class="main-content-wrapper">
+					<h4 class="section-title" align="left"><i>LANGUAGES</i></h4>		
+						<div class="mdl-grid category-list">
+							<div class="mdl-cell mdl-cell--4-col brown ">
+							<figure class="effect-sadie" style="background-image: url('image/zg.jpg')"  color="red">
+								<figcaption>
+									<h2>Zawgyi</h2>
+									<!-- Add Description on Hover and Hide Title if the description text are not long -->
+									<a href="{{url_for('dropdown')}}">Unicode</a>
+									<br>
+									<a href="{{url_for('dropdown2')}}">WinInnwa</a>
+										</figcaption>
+							</figure>
+						</div>
+						<div class="mdl-cell mdl-cell--4-col yellow">
+							<figure class="effect-sadie" style="background-image: url('d.jpg')" color="green">
+								<figcaption>
+									<h2>Unicode</h2>
+									<!-- Add Description on Hover and Hide Title if the description text are not long -->
+									<a href="{{url_for('dropdown5')}}">WinInnwa</a>
+									<br>
+									<a href="{{url_for('dropdown6')}}">Zawgyi</a>
+								</figcaption>			
+							</figure>
+						</div>
+						<div class="mdl-cell mdl-cell--4-col cherry red">
+							<figure class="effect-sadie" style="background-image: url('zzz.jpg') ">
+								<figcaption>
+									<h2>WinInnwa</h2>
+									<!-- Add Description on Hover and Hide Title if the description text are not long -->
+									<a href="{{url_for('dropdown3')}}">Unicode</a>
+									<br>
+									<a href="{{url_for('dropdown4')}}">Zawgyi</a>
+								</figcaption>			
+							</figure>
+						</div>
+						<div class="mdl-cell mdl-cell--4-col teal">
+							<figure class="effect-sadie" style="background-image: url('ggg.jpg') ">
+								<figcaption>
+									<h2>Other Languages</h2>
+									<!-- Add Description on Hover and Hide Title if the description text are not long -->
+									<a href="http://itools.com/language/translate">Click Button</a>
+								</figcaption>			
+							</figure>
+						</div>
+					</div>
+					<div class="action_buttons center_contents" align="center">
+						<a href="{{url_for('mytable')}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" data-upgraded=",MaterialButton,MaterialRipple">				
+							<i class="material-icons">TOPIC</i>
+							<span class="mdl-button__ripple-container">
+							<span class="mdl-ripple"></span>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div><br><br>
+		<div class="row">
+			<div class="col s12 m12">
+				<div class="card cyan">
+					<div class="card-action">
+						<span class="card-title"><h4 align="center">About This Project</h4></span>
+						<p align="justify">
+							The Universal  Font Converter was created by Kilo-Mdy-Geo with funding from the "Geo Mandalar Investment and Technology". The objective of the development is to provide the community a tool for converting files between different  encoding schemes with different file formats. The converter also can translate script with different encodings to variant Wylie transliterations, and vice versa.
+							Universal Font Converter (UFC) has been developed and maintained by GEO. The objective of the development is to provide the community a tool for converting files between different  encoding schemes with different file formats. But we payed more attention on the conversions from the legacy encoding schemes to the Unicode.The converter also can translate  script with different encodings to variant Wylie transliterations, and vice versa.
+
+							The converter covers 3 different  encoding schemes, Unicode, and other languages including:
+							1.Zawgyi<br>
+							2.Unicode<br>
+							3.WinInnwa<br>
+							4.Other Language<br>
+							The converter also covers four common file formats including txt, Unicode txt, rich text file format (RTF) and HTML web page. You can convert file between arbitrary two encoding schemes from 16 ones mentioned above with certain file formats.
+
+							You may download stand-alone version of UFC by click here and install UFC on your local machine.
+
+							UFC was developed under support from Trace Foundation in 2004. The copyright of the software belongs to the foundation.
+						</p>
+						<div class="action_buttons center_contents" align="center">
+							<a href="{{url_for('read')}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" data-upgraded=",MaterialButton,MaterialRipple">
+								<i class="material-icons"></i>Read more
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<footer class="mdl-mega-footer">
+			<div class="mdl-mega-footer__middle-section">
+				<div class="mdl-mega-footer__drop-down-section">
+					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+					<h1 class="mdl-mega-footer__heading">Features</h1>
+					<ul class="mdl-mega-footer__link-list">
+						<li><a href="{{url_for('about')}}">About</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Partners</a></li>
+						<li><a href="#">Updates</a></li>
+					</ul>
+				</div>
+				<div class="mdl-mega-footer__drop-down-section">
+					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+					<h1 class="mdl-mega-footer__heading">Details</h1>
+					<ul class="mdl-mega-footer__link-list">
+						<li><a href="#">Specs</a></li>
+						<li><a href="#">Tools</a></li>
+						<li><a href="#">Resources</a></li>
+					</ul>
+				</div>
+				<div class="mdl-mega-footer__drop-down-section">
+					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+					<h1 class="mdl-mega-footer__heading">Technology</h1>
+					<ul class="mdl-mega-footer__link-list">
+						<li><a href="#">How it works</a></li>
+						<li><a href="#">Patterns</a></li>
+						<li><a href="#">Usage</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">Contracts</a></li>
+					</ul>
+				</div>
+				<div class="mdl-mega-footer__drop-down-section">
+					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+					<h1 class="mdl-mega-footer__heading">FAQ</h1>
+					<ul class="mdl-mega-footer__link-list">
+						<li><a href="{{url_for('Question')}}">Questions</a></li>
+						<li><a href="{{url_for('Answer')}}">Answers</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mdl-mega-footer__bottom-section">
+				<div class="mdl-logo">Title</div>
+				<ul class="mdl-mega-footer__link-list">
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Privacy & Terms</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+  </div>
+ </div>                      
+</body>
+</html>
+

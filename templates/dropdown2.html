@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../static/css/materialize.min.css"  media="screen,projection"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/zgtowin.js')}}"></script>    
+      
+      <style type="text/css"></style>
+  </head>
+  <body>
+       
+     
+<nav>
+  <div class="nav-wrapper blue violet">
+	  <a href="{{url_for('index')}}" class="brand-logo"><i class="material-icons">home</i>Home</a>
+    
+  </div>
+</nav>
+ <form class="col s4">
+      <div class="input-field col s12">
+          <textarea id="myinput"  data-length="120" style="width: 300px; height: 150px;background-color:#f4e542"></textarea>
+          <label for="myinput"><h5>ZawGyi</h5></label>
+        </div>
+		<div class="input-field col s12">
+          <textarea id="myoutput"  data-length="120" style="width: 300px; height: 150px;background-color:#f4e542"></textarea>
+          <label for="myoutput"><h5>Win</h5></label>
+        </div>
+ 
+  <button class="btn waves-effect waves-light" type="submit" name="action" style="background-color:blue;"><i class="material-icons left"></i>Converter
+  </button>
+  <input type="reset" name="clear" value="Clear" class="btn btn-success">
+  </form>
+  <footer>
+    <div class="footer-copyright blue violet">
+            <div class="container"  style="height: 70px;">
+           <a class="grey-text text-lighten-4 left" href="{{url_for('index')}}">Back</a>
+            <a class="grey-text text-lighten-4 right" href="{{url_for('dropdown5')}}">NEXT</a>
+            </div>
+          </div>
+        </footer>
+</body>
+</html>
