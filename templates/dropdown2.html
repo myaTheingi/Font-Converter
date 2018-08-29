@@ -9,7 +9,18 @@
 <script type="text/javascript" src="{{url_for('static', filename='js/zgtowin.js')}}"></script>
 <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
       
-      <style type="text/css"></style>
+
+      <style type="text/css">
+      	
+	@font-face {
+                font-family: 'win_innwaregular';
+                src: url("{{url_for('static', filename='wininnwa-webfont.woff2')}}") format('woff2'),
+                  url("{{url_for('static', filename='wininnwa-webfont.woff')}}") format('woff');
+                  font-weight: normal;
+                  font-style: normal;
+                  font-size: 50px;
+                   }
+  </style>
   </head>
   <body>
        
@@ -26,7 +37,7 @@
           <label for="myinput"><h5>ZawGyi</h5></label>
         </div>
 		<div class="input-field col s12">
-          <textarea id="myoutput"  data-length="120" style="width: 300px; height: 150px;background-color:#f4e542"></textarea>
+          <textarea id="myoutput"  data-length="120" style="width: 300px; height: 150px;background-color:#f4e542;font-family: 'win_innwaregular';"></textarea>
           <label for="myoutput"><h5>Win</h5></label>
         </div>
  
